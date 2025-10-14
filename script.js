@@ -31,4 +31,3 @@ sendSmsBtn.addEventListener('click', () => {
 
     window.location.href = smsUrl;
 });
-
