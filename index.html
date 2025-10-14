@@ -64,12 +64,22 @@
             <label for="phone">Numéro de téléphone :</label>
             <input type="tel" id="phone" name="phone" required placeholder="Votre numéro de téléphone" pattern="^\+?\d{7,15}$" />
 
+            <label for="address">Adresse postale (facultatif) :</label>
+            <input type="text" id="address" name="address" placeholder="Votre adresse postale" />
+
+
             <label for="message">Message :</label>
             <textarea id="message" name="message" rows="5" required placeholder="Votre message"></textarea>
 
             <button type="button" id="sendSmsBtn">Envoyer par SMS</button>
         </form>
     </section>
+    <footer>
+    <p style="font-size: 0.85rem; color: #555; text-align: center; margin: 2rem 1rem;">
+        En soumettant ce formulaire, vous acceptez que vos données soient utilisées uniquement pour organiser votre rendez-vous et vous contacter. 
+        <a href="politique-confidentialite.html" target="_blank" style="color: #b55163; text-decoration: underline;">Politique de confidentialité</a>
+    </p>
+    </footer>
 
 </main>
 

@@ -133,3 +133,19 @@ button:hover {
 }
 
 /* Message confirmation */
+footer {
+    margin-top: 4rem;
+    padding: 1rem 0;
+    background: #f9f9f9;
+    border-top: 1px solid #ddd;
+    font-size: 0.9rem;
+    color: #555;
+}
+footer a {
+    color: #b55163;
+    text-decoration: underline;
+}
+footer a:hover {
+    color: #8a3f47;
+}
+

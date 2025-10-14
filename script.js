@@ -25,9 +25,10 @@ sendSmsBtn.addEventListener('click', () => {
 
     const encodedSms = encodeURIComponent(smsBody);
 
-    const phoneNumber = '0032494753647'; // Remplace ce numéro par le tien
+    const phoneNumber = '0032494753647';
 
     const smsUrl = `sms:${phoneNumber}?body=${encodedSms}`;
 
     window.location.href = smsUrl;
+    
 });
