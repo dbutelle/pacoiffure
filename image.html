@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Galerie - Coiffure à domicile</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+
+<header>
+    <h1><a href="index.html" style="color: inherit; text-decoration: none;">Coiffure à domicile - Mouscron</a></h1>
+    <nav>
+        <a href="index.html#tarifs">Tarifs</a>
+        <a href="index.html#localisation">Localisation</a>
+        <a href="index.html#contact">Contact</a>
+        <a href="image.html">Images</a>
+    </nav>
+</header>
+
+
+<main>
+    <section id="galerie">
+        <h2>Galerie de coiffures</h2>
+        <div class="gallery">
+            <img src="Images/Carte_tarif_PA.png" alt="Grille de tarif" />
+            <!-- <img src="https://images.pexels.com/photos/853427/pexels-photo-853427.jpeg" alt="Coupe homme" />
+            <img src="https://images.pexels.com/photos/3993441/pexels-photo-3993441.jpeg" alt="Coloration professionnelle" />
+            <img src="https://images.pexels.com/photos/704815/pexels-photo-704815.jpeg" alt="Brushing élégant" />
+            <img src="https://images.pexels.com/photos/3738348/pexels-photo-3738348.jpeg" alt="Chignon de mariage" />
+            <img src="https://images.pexels.com/photos/3617540/pexels-photo-3617540.jpeg" alt="Coiffure naturelle" /> -->
+        </div>
+    </section>
+</main>
+
+<!-- Lightbox -->
+<div id="lightbox" class="lightbox">
+    <span class="close">&times;</span>
+    <img class="lightbox-content" id="lightbox-img" />
+</div>
+
+<script>
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = document.getElementById('lightbox-img');
+const closeBtn = document.querySelector('.close');
+
+document.querySelectorAll('.gallery img').forEach(img => {
+    img.addEventListener('click', () => {
+        lightbox.style.display = 'flex';
+        lightboxImg.src = img.src;
+        lightboxImg.alt = img.alt;
+    });
+});
+
+closeBtn.addEventListener('click', () => {
+    lightbox.style.display = 'none';
+});
+
+lightbox.addEventListener('click', (e) => {
+    if (e.target === lightbox) lightbox.style.display = 'none';
+});
+</script>
+
+</body>
+</html>
